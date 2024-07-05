@@ -1,0 +1,855 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Kazimir,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+}
+
+p, a {
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.hero {
+    height: 600px;
+    width: 100%;
+   background-image:linear-gradient(rgba(17, 15, 26, 0.6), rgba(7, 3, 34, 0.8)), url('../Img/header-index.jpg');
+   background-position: center;
+   background-size: cover;
+   overflow-x: hidden;
+   position: relative;
+}
+
+/* estilos barra de navegación */
+
+.nav-bar {
+    display: flex;
+    padding: 40px 120px;
+
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-bar .nav-logo {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding:  8px 25px;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding:  8px 25px;
+    letter-spacing: 1px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgba(87, 248, 117, 0.6);
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition: .5s;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 2px white solid;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: .5s ease-out;
+}
+
+.btn:hover {
+    background-color:	#D4AF37;
+
+    border: 2px 	#D4AF37 solid;
+    transition: .5s ease-out;
+}
+
+.nav-bar .btn {
+    float: right;
+    
+}
+
+/* fin estilos barra de navegación */
+
+/* 
+ESTILOS PÁGINA INDEX */
+
+.banner-title {
+    margin: 110px 130px;
+    color: white;
+}
+
+.banner-title h1 {
+font-size: 80px;
+margin-bottom: 30px;
+font-weight: lighter;
+letter-spacing: 1px;
+text-align: center;
+}
+
+.banner-title h1 span {
+    font-weight: bold;
+    color: #ffff9f;
+}
+
+
+
+
+.introduction {
+    text-align: center;
+/* background-color: #a09ce2; */
+background-color: #f0ecf0;
+    padding: 50px;
+
+}
+
+.introduction h2 {
+  font-weight: lighter;
+  font-size: 40px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+.introduction h2 span {
+  color: #7765c2;
+  font-weight: bold;
+}
+
+.introduction p {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: lighter;
+margin-bottom: 30px;
+
+} 
+
+.btn-dark {
+  text-decoration: none;
+  padding: 10px 40px;
+  border: 2px #768ddc solid;
+  border-radius: 30px;
+  font-weight: 600;
+  color: #768ddc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: .5s ease-out;
+}
+
+.btn-dark:hover {
+  background-color:	#D4AF37;
+color: white;
+  border: 2px 	#D4AF37 solid;
+  transition: .5s ease-out;
+}
+
+
+/* tarjetas circulares */
+
+.circle-cards {
+  margin-top: 130px;
+  margin-left: 10%;
+
+}
+
+.contenedor-cards {
+  display: flex;
+}
+
+.card-circle {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  padding:50px;
+  margin-left: 40px;
+  border:4px solid rgba(87, 248, 117, 0.6);
+  transition: .5s ease-out;
+}
+
+
+.card-circle img {
+  width: 50px;
+  margin-top: 35px;
+}
+
+.card-circle h1 {
+  margin-top: 25px;
+  color: #445486;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.card-circle:hover {
+  background-color: rgba(87, 248, 117, 0.6);
+  transition: .5s ease-out;
+  border:4px solid rgba(156, 217, 200, 0.6);
+}
+
+.text-circles {
+  margin-top: 90px;
+}
+
+.text-circles p {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+
+
+/* fin tarjetas circulares */
+
+.nosotros-index {
+  margin-top: 100px;
+  background-image:linear-gradient(rgba(17, 15, 26, 0.6), rgba(31, 34, 3, 0.8)), url('../Img/nosotros-index.jpg');
+  height: 250px;
+}
+
+.nosotros-index h3 {
+  text-align: center;
+  color: #ffff9f;
+  font-weight: lighter;
+  font-size: 30px;
+ padding-top: 70px;
+ padding-bottom: 30px;
+}
+
+
+/* ESTILOS PÁGINA DONACIONES  */
+
+.donaciones {
+  width: 100%;
+  background-image:linear-gradient(rgba(17, 15, 26, 0.6), rgba(7, 3, 34, 0.8)), url('../Img/header-donaciones.jpg');
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.banner-donaciones{
+  margin: 80px 130px;
+  color: white;
+}
+
+.banner-donaciones h1 {
+font-size: 70px;
+margin-bottom: 10px;
+font-weight: lighter;
+letter-spacing: 1px;
+text-align: center;
+}
+
+.banner-donaciones h1 span {
+  font-weight: bold;
+  color: #ffff9f;
+  font-size: 30px;
+}
+
+.porquedonar {
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px;
+}
+
+.porquedonar h1 {
+
+    font-weight: lighter;
+    font-size: 40px;
+    color: #374faa;
+ 
+  }
+  
+  
+  .porquedonar p {
+    margin-top: 50px;
+  font-size: 22px;
+  font-weight: lighter;
+margin-bottom: 30px;
+
+} 
+
+
+/* MODAL ESTILOS */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background: hsla(0, 0%, 40%, .6);
+}
+
+/* using :target */
+.modal-container:target {
+  display: flex;
+}
+
+.modal {
+  width: 40rem;
+  height: 10rem;
+  padding: 4rem 2rem;
+  
+
+  color:black;
+  background: white;
+  box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
+  position: relative;
+
+  overflow: hidden;
+}
+
+.modal__details {
+  text-align: center;
+
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid hsla(0, 0%, 100%, .4);
+}
+
+
+.modal__description {
+ 
+font-size: 18px;
+text-align: justify;
+  
+}
+
+.modal__text {
+  padding: 0 4rem;
+  margin-bottom: 4rem;
+
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.modal__text::before {
+  content: '';
+
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid hsla(0, 0%, 100%, .2);
+  border-radius: 100rem;
+
+  pointer-events: none;
+}
+
+
+
+/* links */
+/* =============================================== */
+
+.link-1:hover,
+.link-1:focus {
+  transform: translateY(-.2rem);
+  box-shadow: 0 0 4.4rem .2rem hsla(236, 50%, 50%, 0.4);
+}
+
+.link-2 {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid hsla(0, 0%, 100%, .4);
+  border-radius: 100rem;
+
+  color: rgba(87, 248, 117, 0.6);
+  font-size: 2.2rem;
+
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s;
+}
+
+.link-2::before {
+  content: '×';
+
+  transform: translateY(-.1rem);
+}
+
+.link-2:hover,
+.link-2:focus {
+  border-color: hsla(0, 0%, 100%, .6);
+  transform: translateY(-.2rem);
+}
+
+.contenedor-objetivos {
+  display: flex;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.card-objetivos {
+  margin-left: 110px;
+}
+
+.text-container {
+  display: flex;
+}
+
+.text-container a {
+  margin-left: 15px;
+  background-color: rgba(87, 248, 117, 0.6);
+  border-radius: 100%;
+  padding-top: 5px;
+  width: 25px;
+  color: black;
+  
+}
+
+.text-container h2 {
+  font-weight: 400;
+}
+  
+.icon img {
+  width: 60px;
+}
+
+/* tarjetas métodos de donación */
+
+.title-metodos {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f0ecf0;
+  padding-top: 50px;
+}
+
+.title-metodos h2 {
+  
+  font-weight: lighter;
+  font-size: 40px;
+  color: #374faa;
+
+}
+
+.metodos {
+  display: flex;
+  padding-left: 90px;
+  padding-top: 80px;
+  background-color: #f0ecf0;
+  
+}
+
+figure.snip1321 {
+
+  position: relative;
+  overflow: hidden;
+  margin: 40px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+}
+figure.snip1321 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 300px;
+  filter: brightness(50%);
+}
+figure.snip1321 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1321 h2,
+figure.snip1321 h4 {
+  margin: 0;
+}
+figure.snip1321 h2 {
+  font-weight: 500;
+  
+}
+figure.snip1321 h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+
+}
+figure.snip1321 i {
+  font-size: 32px;
+}
+figure.snip1321:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
+figure.snip1321 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1321:hover figcaption,
+figure.snip1321.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+  opacity: 0.9;
+}
+
+/* 
+fin tarjetas métodos de donación */
+
+.outro {
+  margin-top: 60px;
+  text-align: center;
+
+  color: black;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.outro h3 {
+  font-weight: 100;
+}
+
+/* FIN ESTILOS PÁGINA DONACIONES */
+
+
+/* PÁGINA FOOD PACK */
+
+.food-pack {
+ height: 460px;
+  width: 100%;
+ background-image:linear-gradient(rgba(17, 15, 26, 0.6), rgba(7, 3, 34, 0.8)), url('../Img/header-foodpack.jpg');
+ background-position: center;
+ background-size: cover;
+ overflow-x: hidden;
+ position: relative;
+}
+
+.banner-foodpack h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  }
+
+  .banner-foodpack h1 span { 
+    color: #ffff9f;
+    font-weight: bold;
+  }
+
+  .banner-foodpack {
+    margin: 100px 130px;
+    color: white;
+}
+
+.section1 {
+  text-align: center;
+  margin-top: 50px;
+  margin: 50px;
+}
+
+
+.section1 h2 {
+  font-weight: lighter;
+  font-size: 40px;
+  color: #374faa;
+  letter-spacing: 1px;
+}
+
+.section1 p {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+
+.card-funciona {
+  display: flex;
+}
+
+
+.card-funciona img {
+  width: 200px;
+  margin: 70px;
+}
+
+.texto-funciona {
+  padding-top: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.texto-funciona h2 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 20px;
+  
+}
+
+
+
+.texto-funciona p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.card-funciona:nth-child(1), .card-funciona:nth-child(3){
+  background-color: #f0ecf0;
+}
+
+.divider {
+  height: 250px;
+  width: 100%;
+ background-image:linear-gradient(rgba(17, 15, 26, 0.6), rgba(7, 3, 34, 0.8)), url('../Img/dividerfoodpack.jpg');
+}
+
+.divider h2 {
+  text-align: center;
+  color: #ffff9f;
+  font-weight: lighter;
+  font-size: 30px;
+ padding-top: 70px;
+ padding-bottom: 30px;
+}
+
+.divider p {
+  text-align: center;
+  color: #ffff9f;
+  font-weight: lighter;
+font-size: 22px;
+margin-bottom: 35px;}
+
+.metodo {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.metodo h2 {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.metodo span {
+  color: #7765c2;
+  font-weight: bold;
+}
+
+.metodo p {
+  margin: 40px 50px;
+  font-size: 22px;
+  
+}
+
+
+
+
+
+/* 
+
+FIN ESTILOS PÁGINA FOOD PACK */
+
+
+
+/* ESTILOS PÁGINA ORDENAR FOOD PACK */
+
+
+
+
+/* Style the form */
+#regForm {
+
+  margin: 20px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+#regForm h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#regForm h1 span {
+  color: #7765c2;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
+
+.money-option {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.money-option .tooltiptext {
+  font-size: 15px;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.money-option .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.money-option:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.first-step {
+  width: 500px;
+  height: 400px;
+  border: 1px solid rgb(162, 162, 162);
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.tiny h6 {
+ 
+font-size: 15px;
+font-weight: 400;
+margin-top: 15px;
+margin-bottom: 20px;
+}
+
+
+
+/* FIN ESTILOS PÁGINA ORDENAR FOOD PACK */
