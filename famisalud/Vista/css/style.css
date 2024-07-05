@@ -1,0 +1,45 @@
+.nav-fami{
+    margin: 25px,0px,25,opx;
+    padding: 15px;
+    text-align: left;
+    background-color: #8ebee2;
+}
+
+a{
+    color: black;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url("img/fondo.jpg");
+}
+
+.logo{
+    float: left;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;   
+    opacity: 92%;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ .ff {
+    background-color: white;
+    padding: 20px;
+ }
+
+ .botoncito{
+    float: right;
+ }
+
